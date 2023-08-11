@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Deactivation</title>
+</head>
+<body>
+    <h1>Account Deactivation Form</h1>
+    <form id="Deactivation form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="pwd">Password:</label>
+        <input type="text" id="pwd" name="pwd" required><br><br>
+        
+        
+        <button type="submit">Deactivate Account</button>
+    </form>
+
+    <script>
+        document.getElementById("Deactivation form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const pwd = document.getElementById("pwd").value;
+            
+
+                        alert("Your account has been deactivated. you can create new account whenever you wanted to again");
+
+            
+            document.getElementById("username").value = "";
+            document.getElementById("pwd").value = "";
+        });
+    </script>
+</body>
+</html>
